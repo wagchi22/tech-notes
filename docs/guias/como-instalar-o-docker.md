@@ -25,20 +25,14 @@ Mais informações leia o guia do [itexto](https://insights.itexto.com.br/o-guia
 ## Desempenho
 
 :::warning Aviso
-Desativar o Windows Defender é arriscado e pode afetar a segurança.<br>
-Prossiga por sua conta e risco.
+Desativar o Windows Defender irá afetar a segurança, prossiga com cautela.
 :::
 
 Para um melhor desempenho, rode no terminal como administrador:
 
 ```powershell
-# Adiciona os itens abaixo na lista de exclusões do Windows Defender
-Add-MpPreference -ExclusionPath "%LOCALAPPDATA%\Docker\wsl\disk"
-Add-MpPreference -ExclusionProcess "vmmemWSL"
-Add-MpPreference -ExclusionProcess "wsl"
-Add-MpPreference -ExclusionProcess "wslhost"
-Add-MpPreference -ExclusionProcess "wslrelay"
-Add-MpPreference -ExclusionProcess "wslservice"
+# Adiciona processos e VHDX do WSL nas exclusões do Windows Defender
+Add-MpPreference -ExclusionPath "$env:LOCALAPPDATA\Docker\wsl\disk"; Add-MpPreference -ExclusionProcess "vmmemWSL"; Add-MpPreference -ExclusionProcess "wsl"; Add-MpPreference -ExclusionProcess "wslhost"; Add-MpPreference -ExclusionProcess "wslrelay"; Add-MpPreference -ExclusionProcess "wslservice"
 ```
 
 ## Manutenção
@@ -46,16 +40,9 @@ Add-MpPreference -ExclusionProcess "wslservice"
 Rode no terminal como administrador:
 
 ```powershell
-# Fazer limpeza
-docker system prune -a
-docker builder prune -a
+# Remover lixo (Docker Desktop aberto)
+docker system prune -a -f; docker builder prune -a -f
 
-# Compactar disco virtual
-docker desktop stop
-wsl --shutdown
-diskpart
-select vdisk file="%LOCALAPPDATA%\Docker\wsl\disk\docker_data.vhdx"
-attach vdisk readonly
-compact vdisk
-detach vdisk
+# Compactar VHDX
+wsl --shutdown; @("select vdisk file=`"$env:LOCALAPPDATA\Docker\wsl\disk\docker_data.vhdx`"", "attach vdisk readonly", "compact vdisk", "detach vdisk") | diskpart
 ```
