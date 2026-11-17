@@ -69,6 +69,7 @@ Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/
 ### Jellyfin
 
 - **Agrupar filmes em coleções:** Ativado
+- **Algoritmo de downmix estéreo:** NightmodeDialogue
 - **Usuários:**
   - **Reproduzir áudio padrão independente do idioma:** Desativado
   - **Idioma do áudio e legenda:** Português (Brasil)
