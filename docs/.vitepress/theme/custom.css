@@ -29,10 +29,6 @@
   line-height: 1.7;
 }
 
-.VPHero .actions {
-  gap: 0.75rem;
-}
-
 .VPFeature {
   border: 1px solid var(--vp-c-divider);
   border-radius: 14px;
