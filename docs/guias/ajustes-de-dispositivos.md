@@ -2,20 +2,23 @@
 
 :::info Visão geral
 Ajustes com foco na precisão e desempenho.<br>
-As opções apresentadas podem variar, adapte se necessário. 
+Algumas opções apresentadas aqui podem variar, adapte se necessário. 
 :::
 
 ## TV LG
 
 :::tip Referências
-Guia essencial do [RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv).
+[RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
 
-Compilado por [P40L0](https://raw.githubusercontent.com/P40L0X/P40L0-Image-Archive/main/Patreon/LG_OLEDs_2026+_Chart_Modern_P40L0_v2.png) (foco em OLED).
+[P40L0](https://raw.githubusercontent.com/P40L0X/P40L0-Image-Archive/main/Patreon/LG_OLEDs_2026+_Chart_Modern_P40L0_v2.png)
 :::
 
-
 <style>
-.tv .scroll { overflow-x: auto; }
+.tv .scroll { overflow-x: auto; margin-bottom: 1.5rem; }
+.tv h3 {
+  margin: 1.2rem 0 .5rem;
+  font-size: 1.1em;
+}
 .tv table {
   width: 100%;
   border-collapse: collapse;
@@ -53,69 +56,64 @@ Compilado por [P40L0](https://raw.githubusercontent.com/P40L0X/P40L0-Image-Archi
 </style>
 
 <div class="tv">
+  <h3>Geral</h3>
   <div class="scroll">
     <table>
       <thead>
         <tr>
-          <th scope="col" rowspan="2">Opção</th>
-          <th scope="colgroup" colspan="2">Streaming</th>
-          <th scope="colgroup" colspan="2">Jogos</th>
-        </tr>
-        <tr>
-          <th scope="col">4K</th>
-          <th scope="col">&le; 1080p</th>
-          <th scope="col">4K</th>
-          <th scope="col">&le; 1080p</th>
+          <th scope="col" rowspan="2">Nome</th>
+          <th scope="colgroup" colspan="2">Recomendado</th>
         </tr>
       </thead>
       <tbody>
-        <tr><th scope="row">Início Rápido+</th><td colspan="4">Desativado</td></tr>
-        <tr><th scope="row">Abrir na tela inicial</th><td colspan="4">Desativado</td></tr>
-        <tr><th scope="row">Live Plus</th><td colspan="4">Desativado</td></tr>
-        <tr><th scope="row">ALLM</th><td colspan="4">Ativado</td></tr>
-        <tr><th scope="row">HDMI Ultra HD Deep Color</th><td colspan="4">Ativado</td></tr>
-        <tr><th scope="row">Just Scan</th><td colspan="4">Ativado</td></tr>
-        <tr><th scope="row">Cuidado visual</th><td colspan="4">Desativado</td></tr>
-        <tr><th scope="row">Economia de energia</th><td colspan="4">Desativado</td></tr>
-        <tr><th scope="row">Ajuda nas configurações</th><td colspan="4">Desativado</td></tr>
-        <tr><th scope="row">Modo HDMI</th><td colspan="2">Padrão</td><td colspan="2">Console<small>ou PC (exceto filmes)</small></td></tr>
-        <tr><th scope="row">Modo de imagem</th><td colspan="2">Filmmaker</td><td colspan="2">Jogos</td></tr>
-        <tr><th scope="row">Backlight</th><td colspan="4">SDR: 60 (&plusmn;20)<br>HDR: 100</td></tr>
-        <tr><th scope="row">Contraste</th><td colspan="4">SDR: 85<br>HDR: 100</td></tr>
-        <tr><th scope="row">Brilho</th><td colspan="4">50</td></tr>
-        <tr><th scope="row">Contraste dinâmico</th><td colspan="4">Desativado</td></tr>
-        <tr><th scope="row">Mapeamento de tons dinâmico<small>só em HDR</small></th><td colspan="2">Desativado</td><td colspan="2">HGiG</td></tr>
-        <tr><th scope="row">Gama</th><td colspan="4">2.2</td></tr>
-        <tr><th scope="row">Nível de preto</th><td colspan="4">Baixo</td></tr>
-        <tr><th scope="row">Motion Eye Care</th><td colspan="4">Desativado</td></tr>
-        <tr><th scope="row">Cor</th><td colspan="4">50</td></tr>
-        <tr><th scope="row">Tom</th><td colspan="4">0</td></tr>
-        <tr><th scope="row">Gama de cores</th><td colspan="4">Automático</td></tr>
-        <tr><th scope="row">Balanço de branco</th><td colspan="4">Morno1</td></tr>
+        <tr><th scope="row">Economia de energia</th><td colspan="3">Desativado</td></tr>
+        <tr><th scope="row">Eye Care</th><td colspan="3">Desativado</td></tr>
+        <tr><th scope="row">HDMI Ultra HD Deep Color</th><td colspan="3">Ativado</td></tr>
+        <tr><th scope="row">ALLM</th><td colspan="3">Ativado</td></tr>
+        <tr><th scope="row">Live Plus</th><td colspan="3">Desativado</td></tr>
+        <tr><th scope="row">Início Rápido+</th><td colspan="3">Desativado</td></tr>
+        <tr><th scope="row">Abrir na tela inicial</th><td colspan="3">Desativado</td></tr>
+        <tr><th scope="row">Ajuda nas configurações</th><td colspan="3">Desativado</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Imagem e áudio</h3>
+  <div class="scroll">
+    <table>
+      <thead>
         <tr>
-          <th scope="row">Nitidez</th>
-          <td>10</td>
-          <td>20</td>
-          <td>0</td>
-          <td>10</td>
+          <th scope="col" rowspan="2">Nome</th>
+          <th scope="colgroup" colspan="2">Cinema</th>
+          <th scope="colgroup" colspan="2">Jogos</th>
         </tr>
-        <tr>
-          <th scope="row">Super Resolução</th>
-          <td>Baixo</td>
-          <td>Médio</td>
-          <td colspan="2">Desativado</td>
-        </tr>
-        <tr><th scope="row">Redução de ruído</th><td colspan="4">Desativado</td></tr>
-        <tr>
-          <th scope="row">Redução de ruído MPEG</th>
-          <td>Desativado</td>
-          <td>Baixo</td>
-          <td colspan="2">Desativado</td>
-        </tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Modo HDMI</th><td colspan="3">Automático</td></tr>
+        <tr><th scope="row">Modo de imagem</th><td colspan="2">SDR: Expert<br>HDR: Filmmaker</td><td colspan="2">Game</td></tr>
+        <tr><th scope="row">Just Scan</th><td colspan="3">Ativado</td></tr>
+        <tr><th scope="row">Backlight</th><td colspan="3">SDR: 60 (&plusmn;20)<br>HDR: 100</td></tr>
+        <tr><th scope="row">Contraste</th><td colspan="3">SDR: 85<br>HDR: 100</td></tr>
+        <tr><th scope="row">Brilho</th><td colspan="3">50</td></tr>
+        <tr><th scope="row">Cor</th><td colspan="3">SDR: 50<br>HDR: 55</td></tr>
+        <tr><th scope="row">Tom</th><td colspan="3">0</td></tr>
+        <tr><th scope="row">Nitidez</th><td colspan="3">Resolução nativa: 0<br>1080p ou inferior: 10</td></tr>
+        <tr><th scope="row">Gama</th><td colspan="3">Muita luz: 1.9<br>Pouca luz: 2.2 (recomendado)<br>Sem luz: 2.4</td></tr>
+        <tr><th scope="row">Nível de preto</th><td colspan="3">Baixo</td></tr>
+        <tr><th scope="row">Gama de cores</th><td colspan="3">Automático (recomendado)<br>SDR: BT.709<br>HDR: BT.2020</td></tr>
+        <tr><th scope="row">Contraste dinâmico</th><td colspan="3">Desativado</td></tr>
+        <tr><th scope="row">Mapeamento de tons dinâmico</th><td colspan="2">Desativado</td><td colspan="2">HGiG</td></tr>
+        <tr><th scope="row">Balanço de branco</th><td colspan="3">Quente1</td></tr>
+        <tr><th scope="row">Local Dimming</th><td colspan="3">Médio</td></tr>
+        <tr><th scope="row">Super resolução</th><td colspan="2">Resolução nativa: Desativado<br>1080p ou inferior: Baixo/Médio</td><td colspan="2">Desativado</td></tr>
+        <tr><th scope="row">Redução de ruído</th><td colspan="3">Desativado</td></tr>
+        <tr><th scope="row">Redução de ruído MPEG</th><td colspan="2">Resolução nativa: Desativado<br>1080p ou inferior: Baixo</td><td colspan="2">Desativado</td></tr>
         <tr><th scope="row">Gradação suave</th><td colspan="2">Baixo</td><td colspan="2">Desativado</td></tr>
-        <tr><th scope="row">Cinema real</th><td colspan="2">Ativado</td><td colspan="2">Desativado</td></tr>
-        <tr><th scope="row">TruMotion</th><td colspan="2">Cinema</td><td colspan="2">Desativado</td></tr>
-        <tr><th scope="row">Modo de áudio</th><td colspan="2">IA</td><td colspan="2">Jogos</td></tr>
+        <tr><th scope="row">Cinema Real</th><td colspan="2">Ativado</td><td colspan="2">Desativado</td></tr>
+        <tr><th scope="row">TruMotion</th><td colspan="2">De-Judder: 2</td><td colspan="2">Desativado</td></tr>
+        <tr><th scope="row">Modo de áudio</th><td colspan="2">Cinema</td><td colspan="2">Jogos</td></tr>
+        <tr><th scope="row">Sound Optimizer</th><td colspan="3">Parede</td></tr>
+        <tr><th scope="row">Virtual Surround</th><td colspan="3">Desativado</td></tr>
       </tbody>
     </table>
   </div>
@@ -124,9 +122,9 @@ Compilado por [P40L0](https://raw.githubusercontent.com/P40L0X/P40L0-Image-Archi
 ## Fire TV
 
 - **Resolução:** Automático
-- **HDR:** Quando compatível
-- **Faixa RGB:** Limitado
 - **Igualar taxa de quadros:** Ativado
+- **Intervalo dinâmico:** Adaptável
+- **Formato da cor:** YCbCr
 
 ## PS5
 
@@ -134,7 +132,7 @@ Compilado por [P40L0](https://raw.githubusercontent.com/P40L0X/P40L0-Image-Archi
 - **HDR:** Quando compatível
 - **Ajuste do HDR:** Vídeo do [HDTVTest](https://youtu.be/6h92l5teghw?t=292)
 - **Faixa RGB:** Limitado
-- **Brilho no jogo:** Ajuste conforme luminosidade do ambiente
+- **Brilho no jogo:** Ajuste conforme a luz ambiente
 
 ## PC Dell
 
@@ -174,4 +172,4 @@ Como instalar o OpenWRT no [Raspberry](https://viniciuspaes.com/openwrt/tutorial
 - **WPS:** Desativado
 - **Band Steering:** Desativado
 - **Largura de banda:** Mínimo (2.4 GHz) e máximo (5 GHz+).
-- **Canal:** Verifique com o [Acrylic Wifi Analyzer](https://www.acrylicwifi.com/en/wifi-analyzer/)
+- **Canal:** Automático (se tiver problemas, verifique com o [Acrylic Wifi Analyzer](https://www.acrylicwifi.com/en/wifi-analyzer/))

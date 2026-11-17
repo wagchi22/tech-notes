@@ -43,12 +43,12 @@ A maioria das imagens ao ser iniciada geram credências temporárias localizado 
 
 ### qBittorrent
 
-- Modo de gerenciamento de torrents: Automático
-- Locais de salvamento: 
-  - Padrão: /data/downloads
-  - Categoria movies: /data/downloads/movies
-  - Categoria porn: /data/media/porn
-  - Categoria tv: /data/downloads/tv
+- **Modo de gerenciamento de torrents:** Automático
+- **Locais de salvamento:** 
+  - **Padrão:** /data/downloads
+  - **Categoria movies:** /data/downloads/movies
+  - **Categoria porn:** /data/media/porn
+  - **Categoria tv:** /data/downloads/tv
 
 ### Prowlarr
 
@@ -56,31 +56,28 @@ Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/
 
 ### Radarr
 
-- Renomear automaticamente: Ativado
-- Categoria usada no qBittorrent: movies
-- Perfil de qualidade padrão: HD-1080p
+- **Renomear automaticamente:** Ativado
+- **Categoria usada no qBittorrent:** movies
+- **Perfil de qualidade padrão:** HD-1080p
 
 ### Sonarr
 
-- Renomear automaticamente: Ativado
-- Categoria usada no qBittorrent: tv
-- Perfil de qualidade padrão: HD-1080p
+- **Renomear automaticamente:** Ativado
+- **Categoria usada no qBittorrent:** tv
+- **Perfil de qualidade padrão:** HD-1080p
 
 ### Jellyfin
 
-- Agrupar filmes em coleções: Ativado
-- Aumento do áudio ao executar downmix: 3
-- Algoritmo downmix estéreo: NightmodeDialogue
-- Usuários:
-  - Reproduzir áudio padrão independente do idioma: Desativado
-  - Idioma do áudio e legenda: Português (Brasil)
-  - Tipo de legenda: Apenas legendas forçadas
-- App da TV:
-  - Tamanho do pôster: Grande
-  - Taxa de atualização: Escala no dispositivo
-  - Cor da legenda: Amarelo
-  - Tamanho da legenda: 125%
-  - Áudio: Downmix para estéreo
+- **Agrupar filmes em coleções:** Ativado
+- **Usuários:**
+  - **Reproduzir áudio padrão independente do idioma:** Desativado
+  - **Idioma do áudio e legenda:** Português (Brasil)
+  - **Tipo de legenda:** Apenas legendas forçadas
+- **Cliente para Fire TV:** [Wholphin](https://github.com/damontecres/Wholphin) (recomendado)
+  - **Troca de taxa de atualização:** Automático
+  - **Tamanho da legenda:** 28
+  - **Cor da legenda:** Amarelo
+  - **Sempre mixar para estéreo:** Ativado
 
 ### Jwbot
 
