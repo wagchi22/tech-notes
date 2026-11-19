@@ -28,8 +28,8 @@ Baixe o arquivo [docker-compose.yml](https://raw.githubusercontent.com/wagchi22/
 Execute no terminal do Docker:
 
 ```powershell
-# Indica o local onde está o docker-compose.yml
-cd <local-do-docker-compose.yml>
+# Entra na pasta do docker-compose.yml
+cd <pasta_do_docker-compose.yml>
 
 # Inicia o container no Docker
 docker compose up -d
@@ -49,6 +49,7 @@ A maioria das imagens ao ser iniciada geram credências temporárias localizado 
   - **Categoria movies:** /data/downloads/movies
   - **Categoria porn:** /data/media/porn
   - **Categoria tv:** /data/downloads/tv
+- **Limite de proporção:** 0
 
 ### Prowlarr
 
@@ -70,6 +71,8 @@ Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/
 
 - **Agrupar filmes em coleções:** Ativado
 - **Algoritmo de downmix estéreo:** NightmodeDialogue
+- **Aceleração de hardware:** Intel Quicksync
+- **Escanear a biblioteca de mídia:** A cada 1 hora
 - **Usuários:**
   - **Reproduzir áudio padrão independente do idioma:** Desativado
   - **Idioma do áudio e legenda:** Português (Brasil)
@@ -82,7 +85,7 @@ Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/
 
 ### Jwbot
 
-:::warning QR code
+:::warning Dados sensíveis
 Não compartilhe capturas contendo o QR code.
 :::
 
