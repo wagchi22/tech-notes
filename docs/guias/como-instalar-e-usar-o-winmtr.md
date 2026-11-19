@@ -10,7 +10,7 @@ Baixe o [WinMTR](https://github.com/leeter/WinMTR-refresh).
 
 ## Usar
 
-:::tip Confiabilidade do teste
+:::tip Confiabilidade
 Use cabo Ethernet em vez de Wi-Fi para reduzir interferências durante o teste.
 :::
 
