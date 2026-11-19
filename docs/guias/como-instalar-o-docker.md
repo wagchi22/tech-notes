@@ -10,7 +10,7 @@ Guia rápido de instalação do Docker.
 Usaremos o Ubuntu pois é a distribuição padrão do WSL.
 :::
 
-Execute no terminal como administrador:
+Execute no terminal (administrador):
 
 ```powershell
 # Instalar o WSL
@@ -20,9 +20,9 @@ wsl --install
 wsl --update
 ```
 
-Manutenção de rotina:
+Para manutenção de rotina, execute no terminal do WSL:
 
-```wsl
+```bash
 # Atualizar a lista de pacotes do repositório
 sudo apt-get update
 
@@ -41,7 +41,7 @@ Leia o guia do [itexto](https://insights.itexto.com.br/o-guia-do-wsl/).
 
 Baixe o [Docker](https://www.docker.com/products/docker-desktop/?at_exp=DO112.B0) e execute.
 
-Manutenção de rotina:
+Para manutenção de rotina, execute no terminal:
 
 ```powershell
 # Atualizar imagens
@@ -60,7 +60,7 @@ wsl --shutdown; @("select vdisk file=`"$env:LOCALAPPDATA\Docker\wsl\disk\docker_
 Desativar o Windows Defender irá afetar a segurança, prossiga com cautela.
 :::
 
-Para um melhor desempenho, rode no terminal como administrador:
+Para um melhor desempenho, rode no terminal (administrador):
 
 ```powershell
 # Adiciona processos e VHDX do WSL nas exclusões do Windows Defender

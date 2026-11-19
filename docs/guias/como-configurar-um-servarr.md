@@ -70,8 +70,6 @@ Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/
 ### Jellyfin
 
 - **Agrupar filmes em coleções:** Ativado
-- **Algoritmo de downmix estéreo:** NightmodeDialogue
-- **Aceleração de hardware:** Intel Quicksync
 - **Escanear a biblioteca de mídia:** A cada 1 hora
 - **Usuários:**
   - **Reproduzir áudio padrão independente do idioma:** Desativado
@@ -81,7 +79,7 @@ Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/
   - **Troca de taxa de atualização:** Automático
   - **Tamanho da legenda:** 28
   - **Cor da legenda:** Amarelo
-  - **Sempre mixar para estéreo:** Ativado
+  - **Formato HDR:** Forçar ativação
 
 ### Jwbot
 
