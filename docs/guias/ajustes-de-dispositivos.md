@@ -130,7 +130,7 @@ Compilado por [P40L0](https://raw.githubusercontent.com/P40L0X/P40L0-Image-Archi
 ## PS5
 
 :::warning HDR
-Nem todos os jogos usam a calibração de HDR do PS5 sendo necessário ajustar o jogo de forma independente.
+Nem todos os jogos usam a calibração HDR do console sendo necessário ajustar cada jogo de forma independente.
 :::
 
 - **Resolução:** Automático
