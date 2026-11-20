@@ -65,14 +65,14 @@ Compilado por [P40L0](https://raw.githubusercontent.com/P40L0X/P40L0-Image-Archi
         </tr>
       </thead>
       <tbody>
-        <tr><th scope="row">Economia de energia</th><td colspan="3">Desativado</td></tr>
+        <tr><th scope="row">Energy Saving</th><td colspan="3">Desativado</td></tr>
         <tr><th scope="row">Care Picture Settings</th><td colspan="3">Desativado</td></tr>
         <tr><th scope="row">HDMI Ultra HD Deep Color</th><td colspan="3">Ativado</td></tr>
         <tr><th scope="row">ALLM</th><td colspan="3">Ativado</td></tr>
-        <tr><th scope="row">Live Mais informações</th><td colspan="3">Desativado</td></tr>
+        <tr><th scope="row">Live Plus</th><td colspan="3">Desativado</td></tr>
         <tr><th scope="row">Início Rápido+</th><td colspan="3">Desativado</td></tr>
-        <tr><th scope="row">Abrir na tela inicial</th><td colspan="3">Desativado</td></tr>
-        <tr><th scope="row">Ajuda nas configurações</th><td colspan="3">Desativado</td></tr>
+        <tr><th scope="row">Abrir na Tela Inicial</th><td colspan="3">Desativado</td></tr>
+        <tr><th scope="row">Ajuda nas Configurações</th><td colspan="3">Desativado</td></tr>
       </tbody>
     </table>
   </div>
@@ -89,29 +89,29 @@ Compilado por [P40L0](https://raw.githubusercontent.com/P40L0X/P40L0-Image-Archi
       </thead>
       <tbody>
         <tr><th scope="row">Modo HDMI</th><td colspan="3">Automático</td></tr>
-        <tr><th scope="row">Modo de imagem</th><td colspan="2">SDR: Expert<br>HDR: Filmmaker</td><td colspan="2">Game</td></tr>
+        <tr><th scope="row">Modo de Imagem</th><td colspan="2">SDR: Expert<br>HDR: Filmmaker</td><td colspan="2">Game</td></tr>
         <tr><th scope="row">Just Scan</th><td colspan="3">Ativado</td></tr>
         <tr><th scope="row">Backlight</th><td colspan="3">SDR: 60 (&plusmn;20)<br>HDR: 100</td></tr>
         <tr><th scope="row">Contraste</th><td colspan="3">SDR: 85<br>HDR: 100</td></tr>
-        <tr><th scope="row">Brilho</th><td colspan="3">48</td></tr>
+        <tr><th scope="row">Brilho</th><td colspan="3">50</td></tr>
         <tr><th scope="row">Cor</th><td colspan="3">50<br></td></tr>
         <tr><th scope="row">Tom</th><td colspan="3">0</td></tr>
         <tr><th scope="row">Nitidez</th><td colspan="2">10<br>20*</td><td colspan="2">0</td></tr>
         <tr><th scope="row">Gama</th><td colspan="3">2.2</td></tr>
-        <tr><th scope="row">Nível de preto</th><td colspan="3">Baixo</td></tr>
-        <tr><th scope="row">Gama de cores</th><td colspan="3">SDR: Automático<br>HDR: Estendido</td></tr>
-        <tr><th scope="row">Contraste dinâmico</th><td colspan="3">Desativado</td></tr>
+        <tr><th scope="row">Nível de Preto</th><td colspan="3">Baixo</td></tr>
+        <tr><th scope="row">Gama de Cores</th><td colspan="3">SDR: Automático<br>HDR: Estendido</td></tr>
+        <tr><th scope="row">Contraste Dinâmico</th><td colspan="3">Desativado</td></tr>
         <tr><th scope="row">Dynamic Tone Mapping</th><td colspan="2">Desativado</td><td colspan="2">HGiG</td></tr>
-        <tr><th scope="row">Balanço de branco</th><td colspan="3">Morno1</td></tr>
+        <tr><th scope="row">Balanço de Branco</th><td colspan="3">Morno1</td></tr>
         <tr><th scope="row">Motion Eye Care</th><td colspan="3">Desativado</td></tr>
         <tr><th scope="row">Local Dimming</th><td colspan="3">Médio</td></tr>
-        <tr><th scope="row">Super resolução</th><td colspan="2">Baixo<br>Médio*</td><td colspan="2">Desativado</td></tr>
-        <tr><th scope="row">Redução de ruído</th><td colspan="3">Desativado</td></tr>
-        <tr><th scope="row">Redução de ruído MPEG</th><td colspan="2">Desativado<br>Baixo*</td><td colspan="2">Desativado</td></tr>
-        <tr><th scope="row">Gradação suave</th><td colspan="2">Baixo</td><td colspan="2">Desativado</td></tr>
-        <tr><th scope="row">Cinema real</th><td colspan="2">Ativado</td><td colspan="2">Desativado</td></tr>
+        <tr><th scope="row">Super Resolução</th><td colspan="2">Baixo<br>Médio*</td><td colspan="2">Desativado</td></tr>
+        <tr><th scope="row">Redução de Ruído</th><td colspan="3">Desativado</td></tr>
+        <tr><th scope="row">Redução de Ruído MPEG</th><td colspan="2">Desativado<br>Baixo*</td><td colspan="2">Desativado</td></tr>
+        <tr><th scope="row">Gradação Suave</th><td colspan="2">Baixo</td><td colspan="2">Desativado</td></tr>
+        <tr><th scope="row">Cinema Real</th><td colspan="2">Ativado</td><td colspan="2">Desativado</td></tr>
         <tr><th scope="row">TruMotion</th><td colspan="2">De-Judder: 2</td><td colspan="2">Desativado</td></tr>
-        <tr><th scope="row">Modo de áudio</th><td colspan="2">Cinema</td><td colspan="2">Jogos</td></tr>
+        <tr><th scope="row">Modo de Áudio</th><td colspan="2">Cinema</td><td colspan="2">Jogos</td></tr>
         <tr><th scope="row">Sound Optimizer</th><td colspan="3">Parede</td></tr>
         <tr><th scope="row">Virtual Surround</th><td colspan="3">Desativado</td></tr>
       </tbody>
@@ -129,13 +129,14 @@ Compilado por [P40L0](https://raw.githubusercontent.com/P40L0X/P40L0-Image-Archi
 
 ## PS5
 
+:::warning HDR
+Nem todos os jogos usam a calibração de HDR do PS5 sendo necessário ajustar o jogo de forma independente.
+:::
+
 - **Resolução:** Automático
-- **HDR:** Quando compatível
-- **Ajuste do HDR:** Vídeo do [HDTVTest](https://youtu.be/6h92l5teghw?t=292)
 - **Faixa RGB:** Limitado
-- **No jogo:**
-  - **Efeitos:** Apenas desfoque de movimento
-  - **Luminosidade:** Ajuste conforme o ambiente, evitando excessos e perda de detalhes
+- **HDR:** Quando compatível
+- **Ajuste do HDR:** No console veja em [HDTVTest](https://youtu.be/6h92l5teghw?t=292) e para o jogo pesquise no canal
 
 ## PC Dell
 
