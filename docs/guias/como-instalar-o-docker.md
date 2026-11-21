@@ -39,14 +39,17 @@ sudo do-release-upgrade
 Leia o guia do [itexto](https://insights.itexto.com.br/o-guia-do-wsl/).
 :::
 
+:::info VHD como esparço
+Muito útil pois permite que o espaço em disco seja recuperado automaticamente.
+:::
+
 Baixe o [Docker](https://www.docker.com/products/docker-desktop/?at_exp=DO112.B0) e instale.
 
-Antes de criar o container ative o modo sparse, execute no terminal:
+Defina o VHD com esparço, execute no terminal:
 
 ```powershell
-# Ativar o sparse
-wsl --shutdown
-wsl --manage docker-desktop --set-sparse true
+# Definir como sparse
+wsl --shutdown; wsl --manage docker-desktop --set-sparse true
 ```
 
 Para manutenção de rotina, execute no terminal (administrador):
@@ -68,6 +71,6 @@ Desativar o Windows Defender irá afetar a segurança, prossiga com cautela.
 Para um melhor desempenho, rode no terminal (administrador):
 
 ```powershell
-# Adiciona processos e VHDX do WSL nas exclusões do Windows Defender
+# Adiciona processos e VHD do WSL nas exclusões do Windows Defender
 Add-MpPreference -ExclusionPath "$env:LOCALAPPDATA\Docker\wsl\disk"; Add-MpPreference -ExclusionProcess "vmmemWSL"; Add-MpPreference -ExclusionProcess "wsl"; Add-MpPreference -ExclusionProcess "wslhost"; Add-MpPreference -ExclusionProcess "wslrelay"; Add-MpPreference -ExclusionProcess "wslservice"
 ```
