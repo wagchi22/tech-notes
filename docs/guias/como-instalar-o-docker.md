@@ -39,9 +39,17 @@ sudo do-release-upgrade
 Leia o guia do [itexto](https://insights.itexto.com.br/o-guia-do-wsl/).
 :::
 
-Baixe o [Docker](https://www.docker.com/products/docker-desktop/?at_exp=DO112.B0) e execute.
+Baixe o [Docker](https://www.docker.com/products/docker-desktop/?at_exp=DO112.B0) e instale.
 
-Para manutenção de rotina, execute no terminal:
+Antes de criar o container ative o modo sparse, execute no terminal:
+
+```powershell
+# Ativar o sparse
+wsl --shutdown
+wsl --manage docker-desktop --set-sparse true
+```
+
+Para manutenção de rotina, execute no terminal (administrador):
 
 ```powershell
 # Atualizar imagens
@@ -49,9 +57,6 @@ docker compose up -d --force-recreate; docker image prune -f
 
 # Remover lixo
 docker system prune -a -f; docker builder prune -a -f
-
-# Compactar VHDX
-wsl --shutdown; @("select vdisk file=`"$env:LOCALAPPDATA\Docker\wsl\disk\docker_data.vhdx`"", "attach vdisk readonly", "compact vdisk", "detach vdisk") | diskpart
 ```
 
 ## Desempenho
