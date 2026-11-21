@@ -15,7 +15,6 @@ data/
         ├── movies/
         └── tv/
     ├── movies/
-    ├── porn/
     └── tv/
 ```
 
@@ -47,7 +46,6 @@ A maioria das imagens ao ser iniciada geram credências temporárias localizado 
 - **Locais de salvamento:** 
   - **Padrão:** /data/downloads
   - **Categoria movies:** /data/downloads/movies
-  - **Categoria porn:** /data/media/porn
   - **Categoria tv:** /data/downloads/tv
 - **Limite de proporção:** 0
 
