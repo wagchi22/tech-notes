@@ -69,6 +69,7 @@ Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/
 
 - **Agrupar filmes em coleções:** Ativado
 - **Escanear a biblioteca de mídia:** A cada 1 hora
+- **Aceleração de hardware:** Intel Quicksync
 - **Usuários:**
   - **Reproduzir áudio padrão independente do idioma:** Desativado
   - **Idioma do áudio e legenda:** Português (Brasil)

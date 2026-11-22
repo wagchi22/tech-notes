@@ -6,6 +6,10 @@ Guia rápido de instalação do Docker.
 
 ## WSL
 
+:::tip Mais informações
+Leia o guia do [itexto](https://insights.itexto.com.br/o-guia-do-wsl/).
+:::
+
 :::info Linux
 Usaremos o Ubuntu pois é a distribuição padrão do WSL.
 :::
@@ -35,10 +39,6 @@ sudo do-release-upgrade
 
 ## Docker
 
-:::tip Mais informações
-Leia o guia do [itexto](https://insights.itexto.com.br/o-guia-do-wsl/).
-:::
-
 :::info VHD como esparço
 Muito útil pois permite que o espaço em disco seja recuperado automaticamente.
 :::
@@ -63,6 +63,10 @@ docker system prune -a -f; docker builder prune -a -f
 ```
 
 ## Desempenho
+
+:::tip Mais informações
+Leia o guia do [OneUptime](https://oneuptime.com/blog/post/2026-02-08-how-to-optimize-docker-for-high-throughput-applications/view).
+:::
 
 :::warning Segurança
 Desativar o Windows Defender irá afetar a segurança, prossiga com cautela.
