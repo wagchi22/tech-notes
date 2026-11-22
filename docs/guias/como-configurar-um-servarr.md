@@ -20,7 +20,7 @@ data/
 
 ## Docker
 
-Veja [como instalar o Docker](como-instalar-o-docker.md).
+Veja [como instalar o Docker](como-instalar-e-usar-o-docker.md).
 
 Baixe o arquivo [docker-compose.yml](https://raw.githubusercontent.com/wagchi22/tech-notes/refs/heads/main/docker-compose.yml).
 
