@@ -74,7 +74,7 @@ export default defineConfig({
         items: [
           { text: "Ajustes de dispositivos", link: "/guias/ajustes-de-dispositivos" },
           { text: "Como configurar um Servarr", link: "/guias/como-configurar-um-servarr" },
-          { text: "Como instalar o Docker", link: "/guias/como-instalar-o-docker" },
+          { text: "Como instalar e usar o Docker", link: "/guias/como-instalar-e-usar-o-docker" },
           { text: "Como instalar e usar o WinMTR", link: "/guias/como-instalar-e-usar-o-winmtr" },
           { text: "Como usar o Winget", link: "/guias/como-usar-o-winget" }
         ]

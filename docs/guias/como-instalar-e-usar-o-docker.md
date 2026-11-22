@@ -1,4 +1,4 @@
-# Como instalar o Docker
+# Como instalar e usar o Docker
 
 :::info Visão geral
 Guia rápido de instalação do Docker.
