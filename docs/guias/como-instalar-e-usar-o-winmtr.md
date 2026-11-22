@@ -4,11 +4,9 @@
 Guia rápido de instalação do WinMTR e como usar.
 :::
 
-## Instalar
+## WinMTR
 
 Baixe o [WinMTR](https://github.com/leeter/WinMTR-refresh).
-
-## Usar
 
 :::tip Confiabilidade
 Use cabo Ethernet em vez de Wi-Fi para reduzir interferências durante o teste.

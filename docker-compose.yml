@@ -90,15 +90,20 @@ services:
 
 volumes:
   jelly-notify:
-    external: true
     name: jelly-notify
+    external: true
   qbittorrent:
     name: qbittorrent
+    external: true
   prowlarr:
     name: prowlarr
+    external: true
   sonarr:
     name: sonarr
+    external: true
   radarr:
     name: radarr
+    external: true
   jellyfin:
     name: jellyfin
+    external: true
