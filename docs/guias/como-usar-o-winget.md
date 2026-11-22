@@ -4,18 +4,14 @@
 Guia rápido de como usar o Winget.
 :::
 
-## Verificar
+## Winget
 
-Rode no terminal para listar as atualizações disponíveis:
+Rode no terminal:
 
 ```powershell
+# Listar as atualizações disponíveis
 winget upgrade
-```
 
-## Atualizar
-
-Para instalar todas as atualizações:
-
-```powershell
+# Instalar todas as atualizações
 winget upgrade -r
 ```

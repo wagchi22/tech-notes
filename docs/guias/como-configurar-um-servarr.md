@@ -6,7 +6,7 @@ Guia rápido de instalação do Servarr.
 
 ## Diretórios
 
-Crie a árvore de diretórios (no caso estarei usando em `E:\`):
+Crie a árvore de diretórios:
 
 ```text
 data/
@@ -22,9 +22,9 @@ data/
 
 Veja [como instalar o Docker](como-instalar-o-docker.md).
 
-Baixe o arquivo [docker-compose.yml](https://raw.githubusercontent.com/wagchi22/tech-notes/refs/heads/main/docs/guias/scripts/docker-compose.yml).
+Baixe o arquivo [docker-compose.yml](https://raw.githubusercontent.com/wagchi22/tech-notes/refs/heads/main/docker-compose.yml).
 
-Execute no terminal do Docker:
+Execute no terminal:
 
 ```powershell
 # Entra na pasta do docker-compose.yml
