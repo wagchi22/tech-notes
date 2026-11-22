@@ -1,9 +1,9 @@
 import { defineConfig } from "vitepress"
 
 export default defineConfig({
-  title: "Wiki",
+  title: "tech-notes",
   description: "Uma base de conhecimento técnico com guias e configurações documentadas para consulta.",
-  base: "/wiki/",
+  base: "/tech-notes/",
 
   cleanUrls: true,
 
@@ -15,7 +15,7 @@ export default defineConfig({
       {
         rel: "shortcut icon",
         type: "image/x-icon",
-        href: "/wiki/favicon.ico",
+        href: "/tech-notes/favicon.ico",
       },
     ],
     ["style", {}, `
@@ -53,7 +53,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/wagchi22/wiki",
+        link: "https://github.com/wagchi22/tech-notes",
       },
     ],
     
@@ -88,7 +88,7 @@ export default defineConfig({
     ],
 
     editLink: {
-      pattern: "https://github.com/wagchi22/wiki/edit/main/docs/:path",
+      pattern: "https://github.com/wagchi22/tech-notes/edit/main/docs/:path",
       text: "Edite essa página no GitHub"
     },
     

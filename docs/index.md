@@ -2,11 +2,11 @@
 layout: home
 
 hero:
-  name: "Wiki"
+  name: "tech-notes"
   text: ""
   image:
     src: /logo.svg
-    alt: Wiki
+    alt: tech-notes
   tagline: Guias práticos e referências para resolver problemas e configurar seus dispositivos.
   actions:
     - theme: brand
@@ -14,7 +14,7 @@ hero:
       link: /inicio
     - theme: alt
       text: Contribuir
-      link: https://github.com/wagchi22/wiki
+      link: https://github.com/wagchi22/tech-notes
 
 features:
   - icon: 📚
