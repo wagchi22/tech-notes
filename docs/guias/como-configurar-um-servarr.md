@@ -80,10 +80,10 @@ Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/
   - **Cor da legenda:** Amarelo
   - **Formato HDR:** Forçar ativação
 
-### Jwbot
+### Jelly Notify
 
 :::warning Dados sensíveis
 Não compartilhe capturas contendo o QR code.
 :::
 
-Aprenda a configurar em [jwbot](https://github.com/wagchi22/jwbot).
+Aprenda a configurar o [Jelly Notify](https://github.com/wagchi22/jelly-notify).

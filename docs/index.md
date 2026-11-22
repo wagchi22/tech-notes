@@ -2,11 +2,11 @@
 layout: home
 
 hero:
-  name: "tech-notes"
+  name: "Tech Notes"
   text: ""
   image:
     src: /logo.svg
-    alt: tech-notes
+    alt: Tech Notes
   tagline: Guias práticos e referências para resolver problemas e configurar seus dispositivos.
   actions:
     - theme: brand

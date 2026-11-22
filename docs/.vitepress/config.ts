@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress"
 
 export default defineConfig({
-  title: "tech-notes",
+  title: "Tech Notes",
   description: "Uma base de conhecimento técnico com guias e configurações documentadas para consulta.",
   base: "/tech-notes/",
 

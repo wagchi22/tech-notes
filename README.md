@@ -2,9 +2,9 @@
   <img src="docs/public/logo.svg" alt="Logo do projeto" width="400">
 </p>
 
-# tech-notes
+# Tech Notes
 
-Criei o tech-notes originalmente como um espaço pessoal para registrar configurações, procedimentos, soluções e referências técnicas que quero consultar novamente. Ao mesmo tempo, a documentação foi organizada de forma clara para que também possa ser útil para outras pessoas.
+Criei o Tech Notes originalmente como um espaço pessoal para registrar configurações, procedimentos, soluções e referências técnicas que quero consultar novamente. Ao mesmo tempo, a documentação foi organizada de forma clara para que também possa ser útil para outras pessoas.
 
 ## Conteúdo
 
