@@ -90,6 +90,7 @@ services:
 
 volumes:
   jelly-notify:
+    external: true
     name: jelly-notify
   qbittorrent:
     name: qbittorrent
