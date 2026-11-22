@@ -22,7 +22,7 @@ data/
 
 Veja [como instalar o Docker](como-instalar-o-docker.md).
 
-Baixe o arquivo [docker-compose.yml](https://raw.githubusercontent.com/wagchi22/wiki/refs/heads/main/docs/guias/scripts/docker-compose.yml).
+Baixe o arquivo [docker-compose.yml](https://raw.githubusercontent.com/wagchi22/tech-notes/refs/heads/main/docs/guias/scripts/docker-compose.yml).
 
 Execute no terminal do Docker:
 

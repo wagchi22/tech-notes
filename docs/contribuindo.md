@@ -1,6 +1,6 @@
 # Contribuindo
 
-Esta wiki cresce melhor quando cada artigo mantém um padrão simples, útil e fácil de consultar.
+Esta coleção cresce melhor quando cada artigo mantém um padrão simples, útil e fácil de consultar.
 
 ## Padrão recomendado
 
@@ -32,4 +32,4 @@ Antes de finalizar, rode:
 npm run docs:build
 ```
 
-Isso confirma que a wiki continua renderizando corretamente sem publicar em nuvem.
+Isso confirma que a documentação continua renderizando corretamente sem publicar em nuvem.

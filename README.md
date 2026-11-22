@@ -2,9 +2,9 @@
   <img src="docs/public/logo.svg" alt="Logo do projeto" width="400">
 </p>
 
-# wiki
+# tech-notes
 
-Uma base de conhecimento técnico para registrar configurações, procedimentos, soluções e referências que podem ser consultadas novamente quando necessário.
+Criei o tech-notes originalmente como um espaço pessoal para registrar configurações, procedimentos, soluções e referências técnicas que quero consultar novamente. Ao mesmo tempo, a documentação foi organizada de forma clara para que também possa ser útil para outras pessoas.
 
 ## Conteúdo
 
@@ -18,7 +18,7 @@ A documentação cresce de forma incremental conforme novas necessidades surgem.
 
 ## Acesso
 
-https://wagchi22.github.io/wiki/
+https://wagchi22.github.io/tech-notes/
 
 ## Executar localmente
 
@@ -33,7 +33,7 @@ Para gerar a versão estática localmente:
 npm run docs:build
 ```
 
-## Estrutura da wiki
+## Estrutura da documentação
 
 A documentação está organizada em guias e recursos de apoio:
 
@@ -48,4 +48,4 @@ Este projeto está licenciado sob a [MIT License](./LICENSE).
 
 ## Tecnologia
 
-Construído com [VitePress](https://vitepress.dev/) e publicado em GitHub Pages a partir do repositório `wagchi22/wiki`.
+Construído com [VitePress](https://vitepress.dev/) e publicado no GitHub Pages a partir do repositório `wagchi22/tech-notes`.
