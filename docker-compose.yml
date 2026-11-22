@@ -5,6 +5,12 @@ services:
     container_name: jelly-notify
     init: true
     restart: unless-stopped
+    entrypoint:
+      - sh
+      - -c
+      - find /app/.wwebjs_auth -name 'Singleton*' -delete; exec docker-entrypoint.sh "$@"
+      - --
+    command: ["node", "src/index.js"]
     env_file:
       - .env
     environment:
