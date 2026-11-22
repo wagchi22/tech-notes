@@ -54,11 +54,9 @@ wsl --manage docker-desktop --set-sparse true
 
 # Atualizar imagens
 docker compose up -d --force-recreate
-docker image prune -f
 
 # Remover lixo
-docker system prune -a -f
-docker builder prune -a -f
+docker system prune -a
 ```
 
 ## Desempenho
