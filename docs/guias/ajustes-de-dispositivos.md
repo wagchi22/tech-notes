@@ -92,3 +92,7 @@ Nem todos os jogos usam a calibração HDR do console sendo necessário ajustar 
 - **Band Steering:** Desativado
 - **Largura de banda:** Mínimo (2.4 GHz) máximo (5 GHz+)
 - **Canal:** Automático ou [Acrylic Wifi Analyzer](https://www.acrylicwifi.com/en/wifi-analyzer/)
+
+## HD externo
+
+- **Política de melhor desempenho da unidade:** Ativado
