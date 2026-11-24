@@ -3,71 +3,96 @@ import type { ShikiTransformer } from "shiki"
 
 import { readingTimeTag } from "@binarynoir/vitepress-reading-time-tag";
 
-const psLangs = new Set(["powershell", "pwsh", "ps1"]);
+const shellLangs = new Set(["powershell", "pwsh", "ps1"]);
 
-const psColors: Record<string, [string, string]> = {
-  "ps-command": ["#4078f2", "#61afef"],
-  "ps-param": ["#e45649", "#e06c75"],
-  "ps-string": ["#50a14f", "#98c379"],
-  "ps-variable": ["#986801", "#d19a66"],
-  "ps-comment": ["#a0a1a7", "#7f848e"],
+const shellColors: Record<string, { light: string; dark: string }> = {
+  command:  { light: "#4078f2", dark: "#61afef" },
+  param:    { light: "#e45649", dark: "#e06c75" },
+  string:   { light: "#50a14f", dark: "#98c379" },
+  variable: { light: "#986801", dark: "#d19a66" },
+  comment:  { light: "#1b5e20", dark: "#4e9a5b" },
 };
+
+const shellTokens = [
+  { type: "comment",  pattern: "#.*$" },
+  { type: "string",   pattern: `"[^"]*"|'[^']*'` },
+  { type: "variable", pattern: "\\$(?:\\{[^}]+\\}|[\\w:]+)" },
+  { type: "param",    pattern: "(?<=\\s)-{1,2}[\\w-]+" },
+  { type: "command",  pattern: "(?<=^\\s*|[|;]\\s*|&&\\s*)[\\w.-]+" },
+];
+
+const shellRegex = new RegExp(
+  shellTokens.map((t) => `(${t.pattern})`).join("|"),
+  "g"
+);
 
 function textOf(node: any): string {
   if (node.type === "text") return node.value;
   return (node.children ?? []).map(textOf).join("");
 }
 
-const powershellHighlight: ShikiTransformer = {
-  name: "powershell-highlight",
+const shellHighlight: ShikiTransformer = {
+  name: "shell-highlight",
   line(node) {
-    if (!psLangs.has(this.options.lang as string)) return;
+    if (!shellLangs.has(String(this.options.lang).toLowerCase())) return;
 
     const text = textOf(node);
     if (!text) return;
 
-    const regex =
-      /(#.*$)|("[^"]*"|'[^']*')|(\$[\w:]+)|((?<=\s)-{1,2}[\w-]+)|(^\s*[\w.-]+)/g;
-
     const children: any[] = [];
     let last = 0;
-    let m: RegExpExecArray | null;
 
-    const push = (value: string, cls?: string) => {
-      if (!value) return;
-      if (!cls) {
-        children.push({ type: "text", value });
-        return;
-      }
-      const [light, dark] = psColors[cls];
+    const pushText = (value: string) => {
+      if (value) children.push({ type: "text", value });
+    };
+
+    const pushToken = (value: string, type: string) => {
+      const { light, dark } = shellColors[type];
       children.push({
         type: "element",
         tagName: "span",
         properties: {
-          class: cls,
+          class: `shell-${type}`,
           style: `--shiki-light:${light};--shiki-dark:${dark}`,
         },
         children: [{ type: "text", value }],
       });
     };
 
-    while ((m = regex.exec(text)) !== null) {
-      push(text.slice(last, m.index));
-      const cls = m[1]
-        ? "ps-comment"
-        : m[2]
-          ? "ps-string"
-          : m[3]
-            ? "ps-variable"
-            : m[4]
-              ? "ps-param"
-              : "ps-command";
-      push(m[0], cls);
-      last = regex.lastIndex;
+    for (const m of text.matchAll(shellRegex)) {
+      const index = m.index ?? 0;
+      pushText(text.slice(last, index));
+      const type = shellTokens[m.slice(1).findIndex(Boolean)].type;
+      pushToken(m[0], type);
+      last = index + m[0].length;
     }
-    push(text.slice(last));
+    pushText(text.slice(last));
 
     node.children = children;
+  },
+};
+
+const terminalLangs = new Set([
+  "powershell", "pwsh", "ps1",
+  "bash", "sh", "shell", "zsh", "console",
+]);
+
+const themeCommentColors = {
+  light: /--shiki-light:#a0a1a7/i,
+  dark: /--shiki-dark:#7f848e/i,
+};
+
+const terminalComments: ShikiTransformer = {
+  name: "terminal-comments",
+  span(node) {
+    if (!terminalLangs.has(String(this.options.lang).toLowerCase())) return;
+
+    const style = String(node.properties?.style ?? "");
+    if (!themeCommentColors.light.test(style) && !themeCommentColors.dark.test(style)) return;
+
+    node.properties.style = style
+      .replace(themeCommentColors.light, `--shiki-light:${shellColors.comment.light}`)
+      .replace(themeCommentColors.dark, `--shiki-dark:${shellColors.comment.dark}`);
   },
 };
 
@@ -211,7 +236,12 @@ export default defineConfig({
     },
     lineNumbers: false,
 
-    codeTransformers: [powershellHighlight],
+    theme: {
+      light: "one-light",
+      dark: "one-dark-pro",
+    },
+
+    codeTransformers: [shellHighlight, terminalComments],
 
     config(md) {
       md.use((md) => {
