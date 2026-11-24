@@ -1,6 +1,6 @@
 # Como usar o Winget
 
-:::tip ℹ️ Visão geral
+:::info ℹ️ Visão geral
 Guia rápido de como usar o Winget.
 :::
 

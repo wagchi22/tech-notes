@@ -1,6 +1,6 @@
 # Ajustes de dispositivos
 
-:::tip ℹ️ Visão geral
+:::info ℹ️ Visão geral
 Ajustes pessoais com foco em qualidade e desempenho. 
 :::
 
@@ -42,7 +42,7 @@ Ajustes pessoais com foco em qualidade e desempenho.
 
 ## PS5
 
-:::tip ⚠️ HDR
+:::warning ⚠️ HDR
 Nem todos os jogos usam a calibração HDR do console sendo necessário ajustar cada jogo de forma independente.
 :::
 
