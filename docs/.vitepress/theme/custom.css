@@ -143,6 +143,11 @@
 
 .dark .vp-doc div[class*="language-"] button.copy {
   background-color: #292929;
+  transition: background-color 0.2s ease;
+}
+
+.dark .vp-doc div[class*="language-"] button.copy:hover {
+  background-color: #3a3a3a;
 }
 
 .VPHero .name {
