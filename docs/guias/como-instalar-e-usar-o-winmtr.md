@@ -1,6 +1,6 @@
 # Como instalar e usar o WinMTR
 
-:::tip ℹ️ Visão geral
+:::info ℹ️ Visão geral
 Guia rápido de instalação do WinMTR e como usar.
 :::
 

@@ -1,12 +1,12 @@
 # Como configurar um Servarr
 
-:::tip ℹ️ Visão geral
+:::info ℹ️ Visão geral
 Guia rápido de configuração de um Servarr.
 :::
 
 ## Diretórios
 
-:::tip ℹ️ Armazenamento
+:::info ℹ️ Armazenamento
 Estarei usando em `E:\`.
 :::
 
@@ -60,7 +60,7 @@ docker compose up -d
 
 ## Imagens
 
-:::tip ⚠️ Autenticação
+:::warning ⚠️ Autenticação
 A maioria das imagens ao ser iniciada geram credências temporárias localizado nos logs do Docker, sendo recomendado alterar isso após o login.
 :::
 
@@ -106,7 +106,7 @@ A maioria das imagens ao ser iniciada geram credências temporárias localizado 
 
 ### Jelly Notify
 
-:::tip ⚠️ Dados sensíveis
+:::warning ⚠️ Dados sensíveis
 Não compartilhe capturas contendo o QR code.
 :::
 

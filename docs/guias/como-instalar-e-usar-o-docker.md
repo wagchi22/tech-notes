@@ -1,6 +1,6 @@
 # Como instalar e usar o Docker
 
-:::tip ℹ️ Visão geral
+:::info ℹ️ Visão geral
 Guia rápido de instalação do Docker.
 :::
 
@@ -18,7 +18,7 @@ Guia rápido de instalação do Docker.
 [Guia do itexto](https://insights.itexto.com.br/o-guia-do-wsl/)
 :::
 
-:::tip ℹ️ Linux
+:::info ℹ️ Linux
 Usaremos o Ubuntu como distribuição padrão do WSL.
 :::
 
@@ -51,7 +51,7 @@ sudo do-release-upgrade
 A versão Engine possui um desempenho superior.
 :::
 
-:::tip ℹ️ Armazenamento
+:::info ℹ️ Armazenamento
 O VHD como esparso permite recupera espaço automaticamente.
 :::
 
@@ -72,7 +72,7 @@ sudo service docker start
 
 ## Manutenção
 
-:::tip ⚠️ Segurança
+:::warning ⚠️ Segurança
 Desativar o Windows Defender irá afetar a segurança, prossiga com cautela.
 :::
 
