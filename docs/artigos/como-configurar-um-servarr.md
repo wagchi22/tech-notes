@@ -1,5 +1,3 @@
-codeTransformers: [powershellHighlight],
-
 # Como configurar um Servarr
 
 Autor <span class="author">wagchi22</span>
