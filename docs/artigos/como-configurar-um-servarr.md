@@ -1,30 +1,32 @@
+codeTransformers: [powershellHighlight],
+
 # Como configurar um Servarr
 
-:::info ℹ️ Visão geral
-Guia rápido de configuração de um Servarr.
-:::
+Autor <span class="author">wagchi22</span>
+Data <span class="publish-date">24 Nov, 2026</span>
+Leitura [[readingTime]]
+Tags [[tag: servarr]] [[tag: linux]]
+
+> Artigo rápido de configuração de um Servarr.
 
 ## Diretórios
-
-:::info ℹ️ Armazenamento
-Estarei usando em `E:\`.
-:::
 
 Crie a árvore de diretórios:
 
 ```text
-data/
-└── media/
-    ├── downloads/
+E:/
+└── data/
+    └── media/
+        ├── downloads/
+            ├── movies/
+            └── tv/
         ├── movies/
         └── tv/
-    ├── movies/
-    └── tv/
 ```
 
 ## Docker
 
-:::tip 💡 Dicas
+:::tip ✅ Dicas
 [Como instalar o Docker](como-instalar-e-usar-o-docker.md)
 
 [Conteúdo do docker-compose.yml](https://raw.githubusercontent.com/wagchi22/tech-notes/refs/heads/main/docker-compose.yml)
@@ -75,7 +77,7 @@ A maioria das imagens ao ser iniciada geram credências temporárias localizado 
 
 ### Prowlarr
 
-[Indexador do Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/)
+[Indexador do Catálogo BeTor](https://catalogo.betor.top/Artigo/prowlarr/)
 
 ### Radarr
 
@@ -106,7 +108,7 @@ A maioria das imagens ao ser iniciada geram credências temporárias localizado 
 
 ### Jelly Notify
 
-:::warning ⚠️ Dados sensíveis
+:::danger 🚨 Dados sensíveis
 Não compartilhe capturas contendo o QR code.
 :::
 
