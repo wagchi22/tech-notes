@@ -1,12 +1,12 @@
 # Como usar o Winget
 
-:::info Visão geral
+:::tip ℹ️ Visão geral
 Guia rápido de como usar o Winget.
 :::
 
 ## Winget
 
-Rode no terminal:
+Execute no terminal:
 
 ```powershell
 # Listar as atualizações disponíveis

@@ -1,16 +1,24 @@
 # Como instalar e usar o Docker
 
-:::info Visão geral
+:::tip ℹ️ Visão geral
 Guia rápido de instalação do Docker.
+:::
+
+:::tip 💡 Otimização
+[Guia do OneUptime](https://oneuptime.com/blog/post/2026-02-08-how-to-optimize-docker-for-high-throughput-applications/view)
+
+[Guia do ceoS3C](https://www.ceos3c.com/linux/wsl2-performance-optimization-speed-up-your-linux-experience/#docker-performance-in-wsl2)
+
+[Guia do Overcast](https://overcast.blog/optimizing-docker-networking-performance-reducing-latency-and-increasing-throughput-45aba9759af4)
 :::
 
 ## WSL
 
-:::tip Dicas
-Leia o guia do [itexto](https://insights.itexto.com.br/o-guia-do-wsl/).
+:::tip 💡 Dicas
+[Guia do itexto](https://insights.itexto.com.br/o-guia-do-wsl/)
 :::
 
-:::info Linux
+:::tip ℹ️ Linux
 Usaremos o Ubuntu como distribuição padrão do WSL.
 :::
 
@@ -24,7 +32,7 @@ wsl --install
 wsl --update
 ```
 
-Para manutenção no Linux, execute no terminal do WSL:
+### Manutenção
 
 ```bash
 # Atualizar a lista de pacotes do repositório
@@ -39,40 +47,57 @@ sudo do-release-upgrade
 
 ## Docker
 
-:::info VHD como esparço
-Muito útil pois permite que o espaço em disco seja recuperado automaticamente.
+:::tip 💡 Desempenho
+A versão Engine possui um desempenho superior.
 :::
 
-Baixe o [Docker](https://www.docker.com/products/docker-desktop/?at_exp=DO112.B0) e instale.
+:::tip ℹ️ Armazenamento
+O VHD como esparso permite recupera espaço automaticamente.
+:::
 
-Rode no terminal:
+### Engine (recomendado)
+
+Para instalar, execute no terminal:
+
+```shell
+# Instalar o Engine
+curl -fsSL https://get.docker.com | sudo sh
+sudo usermod -aG docker $USER
+sudo service docker start
+```
+
+### Desktop
+
+[Baixe](https://www.docker.com/products/docker-desktop/?at_exp=DO112.B0) e instale.
+
+## Manutenção
+
+:::tip ⚠️ Segurança
+Desativar o Windows Defender irá afetar a segurança, prossiga com cautela.
+:::
 
 ```powershell
-# Definir como sparse
+# Listar distribuições Linux
+wsl -l
+
+# Definir VHD como esparso
 wsl --shutdown
-wsl --manage docker-desktop --set-sparse true
+wsl --manage <distro> --set-sparse true
+
+# Exibir containers
+docker ps
+
+# Exibir logs
+wsl -d <distro>
+docker logs <container>
 
 # Atualizar imagens
 docker compose up -d --force-recreate
 
 # Remover lixo
 docker system prune -a
-```
 
-## Desempenho
-
-:::tip Dicas
-Leia o guia do [OneUptime](https://oneuptime.com/blog/post/2026-02-08-how-to-optimize-docker-for-high-throughput-applications/view).
-:::
-
-:::warning Segurança
-Desativar o Windows Defender irá afetar a segurança, prossiga com cautela.
-:::
-
-Rode no terminal (administrador):
-
-```powershell
-# Adicionar nas exclusões do Windows Defender
+# Excluir no Windows Defender (requer administrador)
 Add-MpPreference -ExclusionPath "$env:LOCALAPPDATA\Docker\wsl\disk"
 Add-MpPreference -ExclusionProcess "vmmemWSL"
 Add-MpPreference -ExclusionProcess "wsl"
