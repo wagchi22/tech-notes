@@ -7,18 +7,18 @@ hero:
   image:
     src: /logo.svg
     alt: Tech Notes
-  tagline: Guias práticos e referências para resolver problemas e configurar seus dispositivos.
+  tagline: Artigos práticos para resolver problemas e configurar seus dispositivos.
   actions:
     - theme: brand
-      text: Explorar
+      text: Explorar artigos
       link: /inicio
-    - theme: alt
-      text: Contribuir
-      link: https://github.com/wagchi22/tech-notes
+    # - theme: alt
+    #  text: Contribuir
+    #  link: https://github.com/wagchi22/tech-notes
 
 features:
   - icon: 📚
-    title: Guias
+    title: Artigos
     details: Procedimentos práticos para instalar, configurar e manter ferramentas e serviços.
 
   - icon: ⚙️

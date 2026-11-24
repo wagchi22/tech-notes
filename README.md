@@ -4,13 +4,13 @@
 
 # Tech Notes
 
-Criei o Tech Notes originalmente como um espaço pessoal para registrar configurações, procedimentos, soluções e referências técnicas que quero consultar novamente. Ao mesmo tempo, a documentação foi organizada de forma clara para que também possa ser útil para outras pessoas.
+Criado riginalmente como um espaço pessoal para registrar artigos técnicos para consultar novamente de forma clara para que também possa ser útil para outras pessoas.
 
 ## Conteúdo
 
 Reúne principalmente:
 
-- **Guias técnicos** — procedimentos de instalação, configuração e manutenção.
+- **Artigos técnicos** — procedimentos de instalação, configuração e manutenção.
 - **Configurações documentadas** — ajustes de sistemas, dispositivos, ferramentas e ambientes.
 - **Conhecimento reutilizável** — informações técnicas organizadas para consulta posterior.
 
@@ -35,12 +35,7 @@ npm run docs:build
 
 ## Estrutura da documentação
 
-A documentação está organizada em guias e recursos de apoio:
-
-- **Guias**: procedimentos completos para configuração e manutenção
-- **Recursos**: template para novos artigos e orientações para contribuir
-
-O template para novos artigos está em [docs/templates/guia-template.md](./docs/templates/guia-template.md).
+A documentação está organizada em artigos: procedimentos completos para configuração e manutenção.
 
 ## Licença
 

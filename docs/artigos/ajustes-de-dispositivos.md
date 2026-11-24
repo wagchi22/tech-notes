@@ -1,15 +1,19 @@
 # Ajustes de dispositivos
 
-:::info ℹ️ Visão geral
-Ajustes pessoais com foco em qualidade e desempenho. 
-:::
+Autor <span class="author">wagchi22</span>
+Data <span class="publish-date">24 Nov, 2026</span>
+Leitura [[readingTime]]
+Tags [[tag: Ajustes]] [[tag: Dispositivos]]
 
+
+> Ajustes pessoais com foco em qualidade e desempenho.
+ 
 ## TV LG
 
-:::tip 💡 Dicas
-[Guia do RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
+:::tip ✅ Dicas
+[RTINGS](https://www.rtings.com/tv/learn/how-to-calibrate-your-tv)
 
-[Guia do P40L0](https://raw.githubusercontent.com/P40L0X/P40L0-Image-Archive/main/Patreon/LG_OLEDs_2026+_Chart_Modern_P40L0_v2.png)
+[P40L0](https://raw.githubusercontent.com/P40L0X/P40L0-Image-Archive/main/Patreon/LG_OLEDs_2026+_Chart_Modern_P40L0_v2.png)
 :::
 
 - **Energy saving:** Desativado
@@ -20,8 +24,8 @@ Ajustes pessoais com foco em qualidade e desempenho.
 - **Backlight:** 60&plusmn;20 (SDR) 100 (HDR)
 - **Contraste:** 85 (SDR) 100 (HDR)
 - **Brilho:** 48
-- **Cor:** /
-- **Tom:** /
+- **Cor:** padrão
+- **Tom:** padrão
 - **Nitidez:** 0
 - **Gama:** 2.2
 - **Nível de preto:** Automático
@@ -53,8 +57,8 @@ Nem todos os jogos usam a calibração HDR do console sendo necessário ajustar 
 
 ## PC Dell
 
-:::tip 💡 Dicas
-[Guia do P40L0](https://www.resetera.com/threads/pc-gaming-optimized-the-ultimate-guide-including-nvidia-amd-cp-g-sync-freesync-hdr-best-settings.757693/)
+:::tip ✅ Dicas
+[P40L0](https://www.resetera.com/threads/pc-gaming-optimized-the-ultimate-guide-including-nvidia-amd-cp-g-sync-freesync-hdr-best-settings.757693/)
 :::
 
 - **Melhorias do Waves MaxxAudioPro:** Desativado
@@ -73,7 +77,7 @@ Nem todos os jogos usam a calibração HDR do console sendo necessário ajustar 
 
 ## Roteador
 
-:::tip 💡 Dicas
+:::tip ✅ Dicas
 
 [DNS do ISP manipula TTL](https://www.reddit.com/r/HomeNetworking/s/jyoxEamZWm)
 

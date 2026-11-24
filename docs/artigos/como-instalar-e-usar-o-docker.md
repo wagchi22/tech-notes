@@ -1,22 +1,13 @@
 # Como instalar e usar o Docker
 
-:::info ℹ️ Visão geral
-Guia rápido de instalação do Docker.
-:::
+Autor <span class="author">wagchi22</span>
+Data <span class="publish-date">24 Nov, 2026</span>
+Leitura [[readingTime]]
+Tags [[tag: linux]] [[tag: automação]]
 
-:::tip 💡 Otimização
-[Guia do OneUptime](https://oneuptime.com/blog/post/2026-02-08-how-to-optimize-docker-for-high-throughput-applications/view)
-
-[Guia do ceoS3C](https://www.ceos3c.com/linux/wsl2-performance-optimization-speed-up-your-linux-experience/#docker-performance-in-wsl2)
-
-[Guia do Overcast](https://overcast.blog/optimizing-docker-networking-performance-reducing-latency-and-increasing-throughput-45aba9759af4)
-:::
+> Artigo rápido de instalação do Docker.
 
 ## WSL
-
-:::tip 💡 Dicas
-[Guia do itexto](https://insights.itexto.com.br/o-guia-do-wsl/)
-:::
 
 :::info ℹ️ Linux
 Usaremos o Ubuntu como distribuição padrão do WSL.
@@ -32,8 +23,6 @@ wsl --install
 wsl --update
 ```
 
-### Manutenção
-
 ```bash
 # Atualizar a lista de pacotes do repositório
 sudo apt-get update
@@ -47,7 +36,7 @@ sudo do-release-upgrade
 
 ## Docker
 
-:::tip 💡 Desempenho
+:::tip ✅ Desempenho
 A versão Engine possui um desempenho superior.
 :::
 
@@ -85,8 +74,6 @@ Register-ScheduledTask -TaskName "WSL Docker" -Action $action -Trigger $trigger 
 
 Para iniciar com o Windows, ative `Start Docker Desktop when you sign in` nas configurações.
 
-## Manutenção
-
 :::warning ⚠️ Segurança
 Desativar o Windows Defender irá afetar a segurança, prossiga com cautela.
 :::
@@ -120,3 +107,12 @@ Add-MpPreference -ExclusionProcess "wslhost"
 Add-MpPreference -ExclusionProcess "wslrelay"
 Add-MpPreference -ExclusionProcess "wslservice"
 ```
+
+## Desempenho
+
+Leia os artigos abaixo:
+
+[OneUptime](https://oneuptime.com/blog/post/2026-02-08-how-to-optimize-docker-for-high-throughput-applications/view)<br>
+[ceoS3C](https://www.ceos3c.com/linux/wsl2-performance-optimization-speed-up-your-linux-experience/#docker-performance-in-wsl2)<br>
+[Overcast](https://overcast.blog/optimizing-docker-networking-performance-reducing-latency-and-increasing-throughput-45aba9759af4)<br>
+[itexto](https://insights.itexto.com.br/o-artigo-do-wsl/)
