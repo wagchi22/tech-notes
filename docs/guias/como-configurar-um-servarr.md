@@ -1,10 +1,14 @@
 # Como configurar um Servarr
 
-:::info Visão geral
-Guia rápido de instalação do Servarr.
+:::tip ℹ️ Visão geral
+Guia rápido de configuração de um Servarr.
 :::
 
 ## Diretórios
+
+:::tip ℹ️ Armazenamento
+Estarei usando em `E:\`.
+:::
 
 Crie a árvore de diretórios:
 
@@ -20,23 +24,43 @@ data/
 
 ## Docker
 
-Veja [como instalar o Docker](como-instalar-e-usar-o-docker.md).
+:::tip 💡 Dicas
+[Como instalar o Docker](como-instalar-e-usar-o-docker.md)
 
-Baixe o arquivo [docker-compose.yml](https://raw.githubusercontent.com/wagchi22/tech-notes/refs/heads/main/docker-compose.yml).
+[Conteúdo do docker-compose.yml](https://raw.githubusercontent.com/wagchi22/tech-notes/refs/heads/main/docker-compose.yml)
+:::
+
+### Engine
+
+Execute no terminal:
+
+```bash
+# Criar diretório
+mkdir -p ~/servarr
+nano docker-compose.yml
+
+# Subir container
+cd servarr/
+docker compose up -d
+```
+
+### Desktop
 
 Execute no terminal:
 
 ```powershell
-# Entra na pasta do docker-compose.yml
-cd <pasta_do_docker-compose.yml>
+# Criar diretório
+mkdir servarr
+notepad docker-compose.yml
 
 # Inicia o container no Docker
+cd servarr
 docker compose up -d
 ```
 
 ## Imagens
 
-:::warning Autenticação
+:::tip ⚠️ Autenticação
 A maioria das imagens ao ser iniciada geram credências temporárias localizado nos logs do Docker, sendo recomendado alterar isso após o login.
 :::
 
@@ -51,7 +75,7 @@ A maioria das imagens ao ser iniciada geram credências temporárias localizado 
 
 ### Prowlarr
 
-Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/).
+[Indexador do Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/)
 
 ### Radarr
 
@@ -82,8 +106,8 @@ Adicione o indexador [Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/
 
 ### Jelly Notify
 
-:::warning Dados sensíveis
+:::tip ⚠️ Dados sensíveis
 Não compartilhe capturas contendo o QR code.
 :::
 
-Aprenda a configurar o [Jelly Notify](https://github.com/wagchi22/jelly-notify).
+[Página do Jelly Notify](https://github.com/wagchi22/jelly-notify)

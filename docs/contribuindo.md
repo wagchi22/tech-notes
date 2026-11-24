@@ -26,7 +26,7 @@ Use o [Template de guia](./templates/guia-template) como referência para novos 
 
 ## Validação local
 
-Antes de finalizar, rode:
+Antes de finalizar, Execute:
 
 ```bash
 npm run docs:build
