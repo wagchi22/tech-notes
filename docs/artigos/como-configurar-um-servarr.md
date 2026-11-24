@@ -75,7 +75,7 @@ A maioria das imagens ao ser iniciada geram credências temporárias localizado 
 
 ### Prowlarr
 
-[Indexador do Catálogo BeTor](https://catalogo.betor.top/Artigo/prowlarr/)
+[Indexador do Catálogo BeTor](https://catalogo.betor.top/guia/prowlarr/)
 
 ### Radarr
 
