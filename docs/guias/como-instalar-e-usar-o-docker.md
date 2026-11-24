@@ -63,12 +63,27 @@ Para instalar, execute no terminal:
 # Instalar o Engine
 curl -fsSL https://get.docker.com | sudo sh
 sudo usermod -aG docker $USER
+
+# Iniciar o Engine
 sudo service docker start
+
+# Iniciar com o WSL
+sudo systemctl enable docker
+```
+
+```powershell
+# Iniciar o WSL com o Windows
+$action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument '-WindowStyle Hidden -Command "wsl.exe -d Ubuntu -e sleep infinity"'
+$trigger = New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME
+$settings = New-ScheduledTaskSettingsSet -ExecutionTimeLimit ([TimeSpan]::Zero) -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
+Register-ScheduledTask -TaskName "WSL Docker" -Action $action -Trigger $trigger -Settings $settings -RunLevel Highest
 ```
 
 ### Desktop
 
 [Baixe](https://www.docker.com/products/docker-desktop/?at_exp=DO112.B0) e instale.
+
+Para iniciar com o Windows, ative `Start Docker Desktop when you sign in` nas configurações.
 
 ## Manutenção
 
