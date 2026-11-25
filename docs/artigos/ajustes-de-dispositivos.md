@@ -16,25 +16,30 @@ Tags [[tag: Ajustes]] [[tag: Dispositivos]]
 [P40L0](https://raw.githubusercontent.com/P40L0X/P40L0-Image-Archive/main/Patreon/LG_OLEDs_2026+_Chart_Modern_P40L0_v2.png)
 :::
 
-- **Energy saving:** Desativado
+- **Energy Saving:** Desativado
 - **Ultra HD Deep Color:** Ativado
 - **ALLM:** Ativado
-- **Perfil:** Vivo
+- **Modo de Imagem (SDR/HDR):** Vivo
 - **Just Scan:** Ativado
-- **Backlight:** 60&plusmn;20 (SDR) 100 (HDR)
-- **Contraste:** 85 (SDR) 100 (HDR)
-- **Brilho:** 48
-- **Cor:** padrão
-- **Tom:** padrão
+- **Backlight (SDR/HDR):** 60-80/100 (rever SDR)
+- **Contraste (SDR/HDR):** 90/100
+- **Brilho:** 50
 - **Nitidez:** 0
-- **Gama:** 2.2
-- **Nível de preto:** Automático
-- **Gama de cores:** Automático
-- **Contraste dinâmico:** Desativado
-- **Mapeamento tons (jogos):** HGiG
-- **Balanço de branco:** Quente
-- **Motion Eye Care:** Desativado
-- **Local dimming:** Médio
+- **Cor:** 60-70 (rever)
+- **Tom:** 0
+- **Temperatura cor:** Morno1/Quente1/W1
+- **Gama:** Médio/2.2
+- **Nível de Preto:** Automático
+- **Gama de Cores:** Automático
+- **Cor/Contraste Dinâmico:** Desativado
+- **Clear White:** Desativado
+- **Super Resolução:** Desativado
+- **Realce de Contorno:** Desativado
+- **Redução de Ruído/MPEG:** Desativado
+- **Mapeamento Dinâmico Tons (jogos):** HGiG
+- **Eye Care:** Desativado
+- **Cinema Real:** Ativado
+- **Local Dimming/Full LED:** Médio
 - **TruMotion:** Desativado
 
 ## Fire TV
@@ -65,7 +70,7 @@ Nem todos os jogos usam a calibração HDR do console sendo necessário ajustar 
 - **Aceleração do mouse (Windows e jogos):** Desativado
 - **Plano de energia:** Alto desempenho
 - **Economia de energia do adaptador Wi-Fi:** Desativado
-- **Outros ajustes:** [Wintoys](https://bogdan-patraucean.github.io/about/wintoys/)
+- **Outros ajustes do Windows:** [Wintoys](https://bogdan-patraucean.github.io/about/wintoys/)
 
 ## Monitor Dell
 

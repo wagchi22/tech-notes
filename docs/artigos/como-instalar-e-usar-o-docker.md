@@ -13,35 +13,33 @@ Tags [[tag: linux]] [[tag: automação]]
 Usaremos o Ubuntu como distribuição padrão do WSL.
 :::
 
+Execute no terminal:
+
+```powershell
+notepad "$env:USERPROFILE\.wslconfig"
+```
+
+Cole o conteúdo abaixo e salve:
+
+```text
+[wsl2]
+networkingMode=mirrored
+
+[experimental]
+hostAddressLoopback=true
+```
+
 Execute no terminal (administrador):
 
 ```powershell
 # Instalar o WSL
 wsl --install
-
-# Verificar atualizações
-wsl --update
-```
-
-```bash
-# Atualizar a lista de pacotes do repositório
-sudo apt-get update
-
-# Atualizar os pacotes instalados
-sudo apt-get upgrade
-
-# Atualizar a versão do Linux
-sudo do-release-upgrade
 ```
 
 ## Docker
 
 :::tip ✅ Desempenho
 A versão Engine possui um desempenho superior.
-:::
-
-:::info ℹ️ Armazenamento
-O VHD como esparso permite recupera espaço automaticamente.
 :::
 
 ### Engine (recomendado)
@@ -74,23 +72,11 @@ Register-ScheduledTask -TaskName "WSL Docker" -Action $action -Trigger $trigger 
 
 Para iniciar com o Windows, ative `Start Docker Desktop when you sign in` nas configurações.
 
-:::warning ⚠️ Segurança
-Desativar o Windows Defender irá afetar a segurança, prossiga com cautela.
-:::
-
 ```powershell
-# Listar distribuições Linux
-wsl -l
-
-# Definir VHD como esparso
-wsl --shutdown
-wsl --manage <distro> --set-sparse true
-
 # Exibir containers
 docker ps
 
 # Exibir logs
-wsl -d <distro>
 docker logs <container>
 
 # Atualizar imagens
@@ -98,7 +84,12 @@ docker compose up -d --force-recreate
 
 # Remover lixo
 docker system prune -a
+```
+:::warning ⚠️ Segurança
+Desativar o Windows Defender irá afetar a segurança, prossiga com cautela.
+:::
 
+```powershell
 # Excluir no Windows Defender (requer administrador)
 Add-MpPreference -ExclusionPath "$env:LOCALAPPDATA\Docker\wsl\disk"
 Add-MpPreference -ExclusionProcess "vmmemWSL"
@@ -106,6 +97,42 @@ Add-MpPreference -ExclusionProcess "wsl"
 Add-MpPreference -ExclusionProcess "wslhost"
 Add-MpPreference -ExclusionProcess "wslrelay"
 Add-MpPreference -ExclusionProcess "wslservice"
+```
+
+## Manutenção
+
+:::info ℹ️ Armazenamento
+O VHD como esparso permite recuperar espaço automaticamente.
+:::
+
+### WSL
+
+```powershell
+# Listar distribuições
+wsl -l
+
+# Iniciar distribuição
+wsl -d Ubuntu
+
+# Definir VHD como esparso
+wsl --shutdown
+wsl --manage Ubuntu --set-sparse true
+
+# Verificar atualizações
+wsl --update
+```
+
+### Ubuntu
+
+```bash
+# Atualizar a lista de pacotes do repositório
+sudo apt-get update
+
+# Atualizar os pacotes instalados
+sudo apt-get upgrade
+
+# Atualizar a versão
+sudo do-release-upgrade
 ```
 
 ## Desempenho
