@@ -9,13 +9,19 @@ Tags [[tag: rede]] [[tag: desempenho]]
 
 ## WinMTR
 
-[Baixe](https://github.com/leeter/WinMTR-refresh) e execute.
+:::info ℹ️ Teste
+Execute o teste no exato momento de lentidão ou travamentos.
+:::
 
 :::tip ✅ Confiabilidade
 Use cabo Ethernet em vez de Wi-Fi para reduzir interferências durante o teste.
 :::
 
-Antes de testar, vá em em opções e desative `Resolve names`.
+[Baixe](https://github.com/leeter/WinMTR-refresh) e execute.
+
+Em opções, desative `Resolve names`.
+
+Teste individualmente `IPv4` e `IPv6`.
 
 Em `Hosts`, insira um IP para teste e clique em `Start`.
 
