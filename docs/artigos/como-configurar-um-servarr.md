@@ -108,9 +108,7 @@ A maioria das imagens ao ser iniciada geram credências temporárias localizado 
   - **Cor da legenda:** Amarelo
   - **Formato HDR:** Forçar ativação
 - **TV:**
-  - Volume Automático: Ativado
-  - Clear Voice: Ativado
-    - Nível: 3
+  - Clear Voice: +3
 
 ### Jelly Notify
 

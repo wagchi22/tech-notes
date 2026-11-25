@@ -16,18 +16,24 @@ Tags [[tag: Ajustes]] [[tag: Dispositivos]]
 [P40L0](https://raw.githubusercontent.com/P40L0X/P40L0-Image-Archive/main/Patreon/LG_OLEDs_2026+_Chart_Modern_P40L0_v2.png)
 :::
 
+:::info Modo de Imagem Vivo
+Prós: A TV melhora a luminosidade especialmente em TVs de entrada no modo HDR.
+
+Contras: Desativa algumas configurações avançadas de imagem.
+:::
+
 - **Energy Saving:** Desativado
-- **Ultra HD Deep Color:** Ativado
+- **HDMI Ultra HD Deep Color:** Ativado
 - **ALLM:** Ativado
-- **Modo de Imagem (SDR/HDR):** Vivo
+- **Modo de Imagem:** Vivo
 - **Just Scan:** Ativado
-- **Backlight (SDR/HDR):** 60-80/100 (rever SDR)
+- **Backlight (SDR/HDR):** 80/100
 - **Contraste (SDR/HDR):** 90/100
 - **Brilho:** 50
 - **Nitidez:** 0
-- **Cor:** 60-70 (rever)
+- **Cor:** 70
 - **Tom:** 0
-- **Temperatura cor:** Morno1/Quente1/W1
+- **Temperatura cor:** Morno2/W40
 - **Gama:** Médio/2.2
 - **Nível de Preto:** Automático
 - **Gama de Cores:** Automático
@@ -37,10 +43,12 @@ Tags [[tag: Ajustes]] [[tag: Dispositivos]]
 - **Realce de Contorno:** Desativado
 - **Redução de Ruído/MPEG:** Desativado
 - **Mapeamento Dinâmico Tons (jogos):** HGiG
-- **Eye Care:** Desativado
+- **Eye Care/Confort:** Desativado
 - **Cinema Real:** Ativado
 - **Local Dimming/Full LED:** Médio
 - **TruMotion:** Desativado
+- **Modo de Som:** Padrão
+    - Volume Automático: Ativado
 
 ## Fire TV
 
@@ -58,7 +66,9 @@ Nem todos os jogos usam a calibração HDR do console sendo necessário ajustar 
 - **Resolução:** Automático
 - **Faixa RGB:** Automático
 - **HDR:** Quando compatível
-- **Ajuste do HDR (console e jogos):** [HDTVTest](https://youtu.be/6h92l5teghw?t=292)
+- **Ajuste do HDR:** 
+    - **Console:** 1-2 quase invisível e 3 no mínimo
+    - **Jogos:** [HDTVTest](https://www.youtube.com/@hdtvtest)
 
 ## PC Dell
 
@@ -66,7 +76,9 @@ Nem todos os jogos usam a calibração HDR do console sendo necessário ajustar 
 [P40L0](https://www.resetera.com/threads/pc-gaming-optimized-the-ultimate-guide-including-nvidia-amd-cp-g-sync-freesync-hdr-best-settings.757693/)
 :::
 
-- **Melhorias do Waves MaxxAudioPro:** Desativado
+- **Aprimoramentos do Waves MaxxAudioPro:** Desativado
+- **Aprimoramento de áudio do dispositivo:** Voice Clarity
+- **Volume/Sensibilidade do microfone:** +10dB
 - **Aceleração do mouse (Windows e jogos):** Desativado
 - **Plano de energia:** Alto desempenho
 - **Economia de energia do adaptador Wi-Fi:** Desativado
