@@ -22,6 +22,10 @@ E:/
         └── tv/
 ```
 
+## Rede
+
+Defina um IP estático no adaptador de rede e anote-o.
+
 ## Docker
 
 :::tip ✅ Dicas
@@ -103,6 +107,10 @@ A maioria das imagens ao ser iniciada geram credências temporárias localizado 
   - **Tamanho da legenda:** 28
   - **Cor da legenda:** Amarelo
   - **Formato HDR:** Forçar ativação
+- **TV:**
+  - Volume Automático: Ativado
+  - Clear Voice: Ativado
+    - Nível: 3
 
 ### Jelly Notify
 
