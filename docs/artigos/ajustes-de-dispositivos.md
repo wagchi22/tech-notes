@@ -33,7 +33,7 @@ Contras: Desativa algumas configurações avançadas de imagem.
 - **Nitidez:** 0
 - **Cor:** 70
 - **Tom:** 0
-- **Temperatura cor:** Morno2/W40
+- **Temperatura cor:** W40
 - **Gama:** Médio/2.2
 - **Nível de Preto:** Automático
 - **Gama de Cores:** Automático
@@ -48,7 +48,7 @@ Contras: Desativa algumas configurações avançadas de imagem.
 - **Local Dimming/Full LED:** Médio
 - **TruMotion:** Desativado
 - **Modo de Som:** Padrão
-    - Volume Automático: Ativado
+    - **Volume Automático:** Ativado
 
 ## Fire TV
 
