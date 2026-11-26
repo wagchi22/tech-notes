@@ -17,21 +17,21 @@ Tags [[tag: Ajustes]] [[tag: Dispositivos]]
 :::
 
 :::info Modo de Imagem Vivo
-Prós: A TV melhora a luminosidade especialmente em TVs de entrada no modo HDR.
+Prós: Melhora a luminosidade em HDR especialmente em TVs de entrada (recomendado).
 
-Contras: Desativa algumas configurações avançadas de imagem.
+Contras: Desativa algumas configurações avançadas de imagem como Mapeamento Dinâmico de Tons.
 :::
 
 - **Energy Saving:** Desativado
 - **HDMI Ultra HD Deep Color:** Ativado
 - **ALLM:** Ativado
-- **Modo de Imagem:** Vivo
+- **Modo de Imagem (SDR/HDR):** Padrão/Vivo
 - **Just Scan:** Ativado
-- **Backlight (SDR/HDR):** 80/100
+- **Backlight (SDR/HDR):** 70/100
 - **Contraste (SDR/HDR):** 90/100
 - **Brilho:** 50
 - **Nitidez:** 0
-- **Cor:** 70
+- **Cor (SDR/HDR):** 50/70
 - **Tom:** 0
 - **Temperatura cor:** W40
 - **Gama:** Médio/2.2
@@ -42,8 +42,8 @@ Contras: Desativa algumas configurações avançadas de imagem.
 - **Super Resolução:** Desativado
 - **Realce de Contorno:** Desativado
 - **Redução de Ruído/MPEG:** Desativado
-- **Mapeamento Dinâmico Tons (jogos):** HGiG
-- **Eye Care/Confort:** Desativado
+- **Mapeamento Dinâmico de Tons (jogos):** HGiG
+- **Eye Care/Comfort:** Desativado
 - **Cinema Real:** Ativado
 - **Local Dimming/Full LED:** Médio
 - **TruMotion:** Desativado
