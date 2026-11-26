@@ -111,12 +111,12 @@ Nem todos os jogos usam a calibração HDR do console sendo necessário ajustar 
 [OpenWRT no Raspberry](https://viniciuspaes.com/openwrt/tutorial-resolver-problema-bufferbloat-openwrt/)
 :::
 
-- **DNS:** [DNS Speed Test](https://controld.com/tools/dns-speed-test)
+- **DNS:** Automático (ou use [dnsbench](https://github.com/ialexsilva/dnsbench-cli))
 - **MTU:** Automático
 - **WPS:** Desativado
 - **Band Steering:** Desativado
 - **Largura de banda:** Mínimo (2.4 GHz) máximo (5 GHz+)
-- **Canal:** Automático ou [Acrylic Wifi Analyzer](https://www.acrylicwifi.com/en/wifi-analyzer/)
+- **Canal:** Automático (ou use [Acrylic Wifi Analyzer](https://www.acrylicwifi.com/en/wifi-analyzer/))
 
 ## HD externo
 
