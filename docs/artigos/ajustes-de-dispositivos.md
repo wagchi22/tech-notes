@@ -114,6 +114,7 @@ Nem todos os jogos usam a calibração HDR do console sendo necessário ajustar 
 - **DNS:** Automático (ou use [dnsbench](https://github.com/ialexsilva/dnsbench-cli))
 - **MTU:** Automático
 - **WPS:** Desativado
+- **WMM:** Ativado
 - **Band Steering:** Desativado
 - **Largura de banda:** Mínimo (2.4 GHz) máximo (5 GHz+)
 - **Canal:** Automático (ou use [Acrylic Wifi Analyzer](https://www.acrylicwifi.com/en/wifi-analyzer/))
