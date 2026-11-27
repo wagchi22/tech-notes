@@ -74,19 +74,6 @@ Register-ScheduledTask -TaskName "WSL Docker" -Action $Action -Trigger $Trigger 
 
 Para iniciar com o Windows, ative `Start Docker Desktop when you sign in` nas configurações.
 
-```powershell
-# Exibir containers
-docker ps
-
-# Exibir logs
-docker logs <container>
-
-# Atualizar imagens
-docker compose up -d --force-recreate
-
-# Remover lixo
-docker system prune -a
-```
 :::warning ⚠️ Segurança
 Desativar o Windows Defender irá afetar a segurança, prossiga com cautela.
 :::
@@ -122,6 +109,31 @@ wsl --manage Ubuntu --set-sparse true
 
 # Verificar atualizações
 wsl --update
+```
+
+### Docker
+
+```bash
+# Exibir containers
+docker ps
+
+# Reiniciar container
+docker restart <container>
+
+# Recriar containers
+docker compose up -d --force-recreate
+
+# Baixar e atualizar imagem
+docker pull <url>
+
+# Exibir logs
+docker logs <container>
+
+# Limpar logs do container
+sudo truncate -s 0 $(docker inspect --format='{{.LogPath}}' <container>)
+
+# Remover lixo
+docker system prune -a
 ```
 
 ### Ubuntu
