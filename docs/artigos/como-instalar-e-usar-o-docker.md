@@ -59,11 +59,13 @@ sudo systemctl enable docker
 ```
 
 ```powershell
-# Iniciar o WSL com o Windows
-$action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument '-WindowStyle Hidden -Command "wsl.exe -d Ubuntu -e sleep infinity"'
-$trigger = New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME
-$settings = New-ScheduledTaskSettingsSet -ExecutionTimeLimit ([TimeSpan]::Zero) -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
-Register-ScheduledTask -TaskName "WSL Docker" -Action $action -Trigger $trigger -Settings $settings -RunLevel Highest
+# Iniciar o WSL Docker com o Windows (oculto)
+$Action = New-ScheduledTaskAction -Execute "wsl.exe" -Argument "-d Ubuntu -e sleep infinity"
+$Trigger = New-ScheduledTaskTrigger -AtStartup
+$Principal = New-ScheduledTaskPrincipal -UserId $env:USERNAME -LogonType S4U
+$Settings = New-ScheduledTaskSettingsSet -Hidden -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -ExecutionTimeLimit ([timespan]::Zero)
+
+Register-ScheduledTask -TaskName "WSL Docker" -Action $Action -Trigger $Trigger -Principal $Principal -Settings $Settings -Force
 ```
 
 ### Desktop
