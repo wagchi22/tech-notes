@@ -5,14 +5,10 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
-    "prepare": "husky"
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
     "@binarynoir/vitepress-reading-time-tag": "^0.1.10",
-    "@commitlint/cli": "^21.2.4",
-    "@commitlint/config-conventional": "^21.2.4",
-    "husky": "^9.1.7",
     "vitepress": "latest",
     "vue": "latest"
   },
