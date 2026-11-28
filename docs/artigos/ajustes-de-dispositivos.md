@@ -5,7 +5,6 @@ Data <span class="publish-date">24 Nov, 2026</span>
 Leitura [[readingTime]]
 Tags [[tag: Ajustes]] [[tag: Dispositivos]]
 
-
 > Ajustes pessoais com foco em qualidade e desempenho.
  
 ## TV LG
