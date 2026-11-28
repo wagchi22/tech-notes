@@ -81,7 +81,9 @@ Nem todos os jogos usam a calibração HDR do console sendo necessário ajustar 
 - **Volume/Sensibilidade do microfone:** +10dB
 - **Aceleração do mouse (Windows e jogos):** Desativado
 - **Plano de energia:** Alto desempenho
-- **Economia de energia do adaptador Wi-Fi:** Desativado
+- **Adaptador Wi-Fi:**
+    - **Economia de energia MIMO:** Sem SMPS
+    - **U-APSD:** Desativado
 - **Outros ajustes do Windows:** [Wintoys](https://bogdan-patraucean.github.io/about/wintoys/)
 
 ## Monitor Dell
